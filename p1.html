@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 1</title>
+    </head>
+
+    <body>
+        <h1 class="arr"></h1>    
+        <h1 class="arr2"></h1>
+        <h1 class="arr3"></h1>
+        <h1 class="arr4"></h1>
+        <h1 class="arr5"></h1>
+        <h1 class="arr6"></h1>
+    </body>
+
+
+    <script>
+        const myColor = ["Red","Green","White","Black"];
+
+        document.querySelector(".arr").innerHTML += "First Array:- " +  myColor.join(); 
+
+        document.querySelector(".arr2").innerHTML += "Second Array:- " +  myColor.join('+');
+
+        document.querySelector(".arr3").innerHTML += "Third Array:- " +  myColor.slice(0,3); 
+
+        document.querySelector(".arr4").innerHTML += "Fourth Array:- " +  myColor.slice(0,1); 
+
+        document.querySelector(".arr5").innerHTML += "Fifth Array:- " +  myColor.slice(1,3);
+
+        const arr6 = myColor.push("orange");
+
+        document.querySelector(".arr6").innerHTML += "Sixth Array:- " +  myColor; 
+
+    </script>
+</html>
