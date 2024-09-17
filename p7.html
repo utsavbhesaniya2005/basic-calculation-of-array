@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 7</title>
+    </head>
+    <body>
+        
+        <h1 style="text-align: center;">Sorting of Number Array In Asending And Descending Order:- </h1><br><br>
+        <h1 class="sortnum"></h1><br>
+        <h1 class="sortnumdesc"></h1><br><br><br>
+
+
+        <h1 style="text-align: center;">Sorting of Charcter Array In Asending And Descending Order:- </h1><br><br>
+        <h1 class="sortchar"></h1><br>
+        <h1 class="sortchardesc"></h1>
+
+
+
+
+        <script>
+
+            const numbers = [23,20,17,12,5,0,1,5,12,19,20];
+
+            document.querySelector(".sortnum").innerHTML = "The Sorting Of [23,20,17, 12,5, 0, 1, 5, 12, 19, 20] In Ascending Order Is:- " + numbers.sort(function(a,b){
+                return a - b;
+            });
+
+            document.querySelector(".sortnumdesc").innerHTML = "The Sorting Of [23,20,17, 12,5, 0, 1, 5, 12, 19, 20] In Desending Order Is:- " + numbers.sort(function(a,b){
+                return b - a;
+            });
+            
+
+
+            const myColor = ["Red", "Green", "White", "Black"];
+
+            document.querySelector(".sortchar").innerHTML = "The Sorting Of ['Red', 'Green', 'White', 'Black'] In Ascending Order Is:- " + myColor.sort();
+
+
+            document.querySelector(".sortchardesc").innerHTML = "The Sorting Of ['Red', 'Green', 'White', 'Black'] In Ascending Order Is:- " + myColor.sort((a,b) => {
+                if(a > b){
+
+                    return -1;
+                }
+                if(b > a){
+
+                    return 1;
+                }
+                return 0;
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 3</title>
+    </head>
+    <body>
+        
+        <h1 class="max"></h1><br>
+        <h1 class="min"></h1>
+
+
+
+
+
+        <script>
+
+            let arr = [5,28,92,61,25,19,37,48,68,29,91,64];
+
+            function find(arr) {
+                
+                let max = arr[0];
+                let min = arr[0];
+
+                for(let i = 0; i < arr.length; i++){
+                    
+                    if(arr[i] > max){
+                        
+                        max = arr[i];
+                    }else if(arr[i] < min){
+
+                        min = arr[i];
+                    }
+                }
+
+                
+                document.querySelector(".max").innerHTML = "Maximum Value From Array [5,28,92,61,25,19,37,48,68,29,91,64] Is:- " + max;
+                document.querySelector(".min").innerHTML = "Minimum Value From Array [5,28,92,61,25,19,37,48,68,29,91,64] Is:- " + min;
+                
+            }
+
+            find(arr);
+        </script>
+    </body>
+</html>

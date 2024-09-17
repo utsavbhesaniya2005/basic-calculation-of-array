@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 10</title>
+    </head>
+    <body>
+        
+        <h1 class="reverse"></h1>
+
+
+        <script>
+
+            const number = [1,2,3,4,5,6,7,8,9,10];
+
+            function reverse(number){
+
+                if(number.length <= 1){
+
+                    return number;
+                }else{
+
+                    return reverse(number.slice(1)).concat([number[0]]);
+                }
+            }
+            
+            document.querySelector(".reverse").innerHTML = "The Reverse Of [1,2,3,4,5,6,7,8,9,10] Is:- " + reverse(number);
+            
+            
+        </script>
+    </body>
+</html>

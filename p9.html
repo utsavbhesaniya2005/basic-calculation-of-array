@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 9</title>
+    </head>
+    <body>
+        
+        <h1 class="first"></h1><br>
+        <h1 class="second"></h1><br>
+        <h1 class="third"></h1><br>
+        <h1 class="fourth"></h1>
+
+
+
+
+
+        <script>
+
+            var x = "airplane";
+
+            document.querySelector(".first").innerHTML = "1. Output For First String 'airplane' Is:- " + x.slice(2,3);
+
+            var x = "oxoxoxox";
+
+            document.querySelector(".second").innerHTML = "2. Output For Second String 'oxoxoxox' Is:- " + x.replaceAll('x','X');
+            
+            var x =  "A New Java Book";
+
+            document.querySelector(".third").innerHTML = "3. Output For Third String 'A New Java Book' Is:- " + x.toLowerCase();
+
+            document.querySelector(".fourth").innerHTML = "4. Output For Fourth String 'A New Java Book' Is:- " + x.toUpperCase();
+            
+        </script>
+    </body>
+</html>

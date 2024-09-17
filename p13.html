@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 13</title>
+    </head>
+    <body>
+        
+        <h1 class="original"></h1><br><br>
+        <h1 class="replace"></h1>
+
+
+        <script>
+
+            var original = "I often take a walk with my dog in the evening. His dog follows him everywhere. I don't feed my dog in the morning";
+
+            document.querySelector(".original").innerHTML = `Original String Is:- ${original}`;
+
+            var replace = original.replaceAll("dog","cat");
+
+            document.querySelector(".replace").innerHTML = `Replaced String Is:- ${replace}`;
+            
+        </script>
+    </body>
+</html>

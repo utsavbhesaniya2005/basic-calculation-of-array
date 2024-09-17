@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Program 5</title>
+    </head>
+    <body>
+        
+        <h1 class="negative"></h1>
+
+
+
+
+
+        <script>
+
+            const numbers = [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20];
+
+            const removeN =  numbers.filter(number => number >= 0);
+            
+            document.querySelector(".negative").innerHTML = "The Postive Element From [-23,-20,-17, -12, -5, 0, 1, 5, 12, 19, 20] Is:- " + removeN;
+            
+            
+        </script>
+    </body>
+</html>
